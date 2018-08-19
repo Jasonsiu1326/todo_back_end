@@ -6,8 +6,10 @@
     <body>
         <input type="checkbox">
         <h2>Make the curriculum 4 Pomodoros</h2>
-        <a href="#" id="edit-todo-button">Edit</a>
+        <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
         <a href="#" id="delete-todo-button">Delete</a>
         <a href="index.html">Go Back...</a>
+        <a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button">Delete</a>
+        <a href="/todo/index">Go back...</a>
     </body>
 </html>
